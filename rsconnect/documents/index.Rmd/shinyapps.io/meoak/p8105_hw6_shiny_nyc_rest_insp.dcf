@@ -5,8 +5,8 @@ account: meoak
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 236688
-bundleId: 1080968
+bundleId: 1081136
 url: https://meoak.shinyapps.io/p8105_hw6_shiny_nyc_rest_insp/
-when: 1510921265.8424
+when: 1510928489.50857
 asMultiple: FALSE
 asStatic: FALSE

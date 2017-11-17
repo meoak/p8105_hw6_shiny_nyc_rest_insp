@@ -33,7 +33,9 @@ restaurant_inspections = read_csv("DOHMH_New_York_City_Restaurant_Inspection_Res
 
 Column {.sidebar}
 -----------------------------------------------------------------------
-This `flexdashboard` with Shiny was made for [Jeff Goldsmith's Data Science I class](http://jeffgoldsmith.com/DSI/index.html) in the Department of Biostatistics at Columbia University. This dataset was accessed in October 2017 and comes from [NYC Open Data](https://dev.socrata.com/foundry/data.cityofnewyork.us/9w7m-hzhe).  Download the data used for this app [here](http://jeffgoldsmith.com/DSI/dataset_restaurant_inspections.html).
+This `flexdashboard` with Shiny was made for [Jeff Goldsmith's Data Science I class](http://jeffgoldsmith.com/DSI/index.html) in the Department of Biostatistics at Columbia University. This dataset was accessed in October 2017 and comes from [NYC Open Data](https://dev.socrata.com/foundry/data.cityofnewyork.us/9w7m-hzhe).  
+Download the data used for this app [here](http://jeffgoldsmith.com/DSI/dataset_restaurant_inspections.html).
+To return to our home page, please click [here](http://ijeasthausen.github.io/p8105_hw6_ije2103)
 
 ```{r}
 boros = restaurant_inspections %>% distinct(boro) %>% pull()
