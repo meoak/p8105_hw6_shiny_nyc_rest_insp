@@ -47,26 +47,16 @@ selectInput("boro_choice", label = h3("Select boro"),
             choices = boros, selected = "Manhattan")
 ```
 
-
-```{r}
-cuisine = restaurant_inspections %>% distinct(cuisine_description) %>% pull()
-
-# radioButtons widget
-radioButtons("cuisine", label = h3("Choose a cuisine"),
-    choices = cuisine)
-```
-
 Row
 -----------------------------------------------------------------------
 
-### Inspection score over time by restaurant
+### Chart A
 
 ```{r}
 renderPlotly({ 
 restaurant_inspections %>%
   group_by(camis) %>%
   filter(!duplicated(inspection_date)) %>%
-  filter(cuisine_description == input$cuisine, boro == input$boro_choice) %>%
   select(camis, inspection_date, score) %>%
   plot_ly(x = ~inspection_date, y = ~score, group_by = ~camis,
             type = 'scatter', 
